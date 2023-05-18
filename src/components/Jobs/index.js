@@ -1,10 +1,8 @@
 import Header from '../Header'
-// eslint-disable-next-line import/extensions
 import EmploymentData from '../EmploymentData'
-import EmploymentPortal from '../EmploymentPortal'
 
 import './index.css'
-
+/*
 const employmentTypesList = [
   {
     label: 'Full Time',
@@ -42,21 +40,13 @@ const salaryRangesList = [
     label: '40 LPA and above',
   },
 ]
+*/
 
 const Jobs = () => (
   <>
     <Header />
     <div className="product-sections">
-      <ul className="salaryList">
-        {salaryRangesList.map(each => (
-          <EmploymentData Details={each} />
-        ))}
-      </ul>
-      <ul className="jobList">
-        {employmentTypesList.map(eachOne => (
-          <EmploymentPortal DetailsJob={eachOne} />
-        ))}
-      </ul>
+      <EmploymentData />
     </div>
   </>
 )
